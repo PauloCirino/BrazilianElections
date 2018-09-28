@@ -1,0 +1,22 @@
+presidentialData <- readr::read_csv(file = "files/presidente.csv") %>%
+  dplyr::mutate(id_candidate_seq = factor(x = id_candidate_seq,
+                                          levels = id_candidate_seq %>% unique()),
+                id_candidate_num = factor(x = id_candidate_num,
+                                          levels = id_candidate_num %>% unique()),
+                cat_candidate_name = factor(x = cat_candidate_name,
+                                            levels = cat_candidate_name %>% unique()),
+                cat_state = factor(x = cat_state, 
+                                   levels = cat_state %>% unique()),
+                cat_party = factor(x = cat_party,
+                                   levels = cat_party %>% unique()),
+                cat_coalition = factor(x = cat_coalition,
+                                       levels = cat_coalition %>% unique()),
+                cat_composition = cat_composition %>% as.character(),
+                cat_eletion_result = factor(x = cat_eletion_result,
+                                            levels = cat_eletion_result %>% unique()),
+                num_turn = factor(x = num_turn,
+                                  levels = num_turn %>% unique()),
+                num_votes = as.numeric(num_votes),
+                cat_political_office = factor(cat_political_office,
+                                              levels = c('Presidente'))
+                )
