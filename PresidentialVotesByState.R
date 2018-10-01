@@ -8,7 +8,6 @@ PresidentialVotesByState <- function(){
                                                      )
                            ),
                          shiny::mainPanel(shiny::br(),
-                                          shiny::br(),
                                           plotly::plotlyOutput(outputId = 'PresidentialVotesByStateViz',
                                                                height = "600px"))
                   )

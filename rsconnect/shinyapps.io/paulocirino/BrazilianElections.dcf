@@ -1,0 +1,12 @@
+name: BrazilianElections
+title: BrazilianElections
+username:
+account: paulocirino
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 480592
+bundleId: 1616090
+url: https://paulocirino.shinyapps.io/BrazilianElections/
+when: 1538405066.60143
+asMultiple: FALSE
+asStatic: FALSE
